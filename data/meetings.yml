@@ -38,17 +38,17 @@ meetings:
   - date: 2026-03-04
     type: parish_council_meeting
     title: Parish Council Meeting
-    agenda: documents/agendas/agenda-parish-council-meeting-260304.pdf
+    agenda: documents/agendas/Agenda Parish Council meeting 260304.pdf
     minutes: ""
 
   - date: 2026-01-14
     type: parish_council_meeting
     title: Parish Council Meeting
-    agenda: documents/agendas/agenda-parish-council-meeting-260114.pdf
-    minutes: documents/minutes/wpc-meeting-minutes-260114.pdf
+    agenda: documents/agendas/Agenda Parish Council meeting 260114.pages.pdf
+    minutes: documents/minutes/WPC Meeting Minutes 260114.pdf
 
   - date: 2025-12-03
     type: parish_council_meeting
     title: Parish Council Meeting
-    agenda: documents/agendas/agenda-parish-council-meeting-251203.pdf
-    minutes: documents/minutes/wpc-meeting-minutes-251203.pdf﻿
+    agenda: documents/agendas/Agenda Parish Council meeting 251203.pdf
+    minutes: documents/minutes/WPC Meeting Minutes 251203.pdf
