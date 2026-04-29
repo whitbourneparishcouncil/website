@@ -1,32 +1,32 @@
 documents:
   - title: Standing Orders
     adopted: 2021-05-05
-    file: documents/policies/wpc-standing-orders-210505.pdf
+    file: documents/policies/WPC Standing orders 210505.pdf
 
   - title: Financial Regulations
     adopted: 2021-05-05
-    file: documents/policies/wpc-financial-regulations-210505.pdf
+    file: documents/policies/WPC Financial Regulations 210505.pdf
 
   - title: Risk Management Policy
     adopted: 2021-05-05
-    file: documents/policies/wpc-risk-management-policy-210505.pdf
+    file: documents/policies/WPC Risk Management Policy 210505.pdf
 
   - title: Complaints Procedure
     adopted: 2021-05-05
-    file: documents/policies/wpc-complaints-procedure-210505.pdf
+    file: documents/policies/WPC Complaints Procedure 210505.pdf
 
   - title: Scheme of Delegation
     adopted: 2021-06-23
-    file: documents/policies/scheme-of-delegation-210623.pdf
+    file: documents/policies/Scheme of Delegation 210623.pdf
 
   - title: Privacy Policy
     adopted: 2018-05-02
-    file: documents/policies/gdpr-privacy-policy.pdf
+    file: documents/policies/WPC HALC (3) GDPR Privacy Policy.pdf
 
   - title: Subject Access Policy
     adopted: 2018-05-02
-    file: documents/policies/gdpr-subject-access-policy.pdf
+    file: documents/policies/WPC HALC (5) GDPR Subject Access Policy.pdf
 
   - title: General Privacy Notice
     adopted: 2018-03
-    file: documents/policies/general-privacy-notice.pdf
+    file: documents/policies/WPC HALC (7) GDPR - Privacy Notice - GENERAL.pdf
