@@ -1,41 +1,316 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Whitbourne Parish Council - Diary</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whitbourne Parish Council – Diary</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ede7df;
+      color: #111;
+    }
+
+    .page {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    .site {
+      background: #fff;
+      border: 1px solid #c9c0b7;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .header {
+      background: linear-gradient(to right, #030311, #050594, #4b87d8);
+      color: white;
+      padding: 24px 32px;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    .header p {
+      margin: 16px 0 0 0;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .header-right {
+      font-family: Georgia, serif;
+      font-size: 2.25rem;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 12px;
+      padding: 12px;
+      background: #eee8e0;
+      border-top: 1px solid #ddd2c5;
+    }
+
+    .nav a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #111;
+      background: #f5f1eb;
+      border: 1px solid #ddd5cb;
+      padding: 16px 10px;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+
+    .content {
+      padding: 32px 24px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .intro p {
+      margin: 0 auto;
+      max-width: 860px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #efefef;
+      margin-bottom: 32px;
+    }
+
+    th {
+      background: #d8d0c4;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 16px 10px;
+      border: 1px solid #c8bfb4;
+    }
+
+    td {
+      border: 1px solid #c8c0b6;
+      padding: 18px 12px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 1.05rem;
+      line-height: 1.35;
+    }
+
+    td.date {
+      font-weight: 600;
+      width: 20%;
+    }
+
+    td.notes {
+      width: 30%;
+    }
+
+    .doc-link {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid #cfc4b8;
+      background: #fff;
+      color: #1b35ff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 999px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .public-note {
+      text-align: center;
+    }
+
+    .public-note p {
+      margin: 0 auto;
+      max-width: 760px;
+      font-size: 1.15rem;
+      line-height: 1.55;
+    }
+
+    .footer {
+      border-top: 1px solid #c9c0b7;
+      background: linear-gradient(to right, #050594, #0909c3, #4b87d8);
+      color: white;
+      padding: 20px 32px;
+      font-weight: 600;
+      font-size: 1.35rem;
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .header-inner {
+        flex-direction: column;
+      }
+
+      .header h1 {
+        font-size: 2.2rem;
+      }
+
+      .header p,
+      .header-right {
+        font-size: 1.6rem;
+      }
+
+      .intro p {
+        font-size: 1.3rem;
+      }
+
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 16px;
+        border: 1px solid #c8c0b6;
+        background: #efefef;
+      }
+
+      td {
+        border: none;
+        border-bottom: 1px solid #d7d0c7;
+      }
+
+      td:last-child {
+        border-bottom: none;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Whitbourne Parish Council</h1>
-  <h2>Diary of Meetings</h2>
+  <div class="page">
+    <div class="site">
+      <header class="header">
+        <div class="header-inner">
+          <div>
+            <h1>Whitbourne Parish Council</h1>
+            <p>Council Diary of Meetings</p>
+          </div>
+          <div class="header-right">Herefordshire</div>
+        </div>
+      </header>
 
-  <p>Minutes are published after approval at the following Parish Council meeting.</p>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="diary.html">Diary</a>
+        <a href="your-council.html">Your Council</a>
+        <a href="councillors.html">Councillors</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="documents.html">Documents</a>
+        <a href="local-links.html">Local Links</a>
+      </nav>
 
-  <table border="1" cellpadding="8" cellspacing="0">
-    <tr>
-      <th>Date</th>
-      <th>Agenda</th>
-      <th>Minutes</th>
-      <th>Notes</th>
-    </tr>
-    <tr>
-      <td>3 December 2025</td>
-      <td><a href="documents/agendas/Agenda Parish Council meeting 251203.pdf">Agenda</a></td>
-      <td><a href="documents/minutes/WPC Meeting Minutes 251203.pdf">Minutes</a></td>
-      <td>Parish Council Meeting</td>
-    </tr>
-    <tr>
-      <td>14 January 2026</td>
-      <td><a href="documents/agendas/Agenda Parish Council meeting 260114.pages.pdf">Agenda</a></td>
-      <td><a href="documents/minutes/WPC Meeting Minutes 260114.pdf">Minutes</a></td>
-      <td>Parish Council Meeting</td>
-    </tr>
-    <tr>
-      <td>4 March 2026</td>
-      <td><a href="documents/agendas/Agenda Parish Council meeting 260304.pdf">Agenda</a></td>
-      <td></td>
-      <td>Parish Council Meeting</td>
-    </tr>
-  </table>
+      <main class="content">
+        <div class="intro">
+          <p>Minutes are published after approval at the following Parish Council meeting.</p>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Agenda</th>
+              <th>Minutes</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="date">3 December 2025</td>
+              <td><a class="doc-link" href="documents/agendas/Agenda Parish Council meeting 251203.pdf" target="_blank">Agenda</a></td>
+              <td><a class="doc-link" href="documents/minutes/WPC Meeting Minutes 251203.pdf" target="_blank">Minutes</a></td>
+              <td class="notes">Parish Council Meeting</td>
+            </tr>
+            <tr>
+              <td class="date">14 January 2026</td>
+              <td><a class="doc-link" href="documents/agendas/Agenda Parish Council meeting 260114.pages.pdf" target="_blank">Agenda</a></td>
+              <td><a class="doc-link" href="documents/minutes/WPC Meeting Minutes 260114.pdf" target="_blank">Minutes</a></td>
+              <td class="notes">Parish Council Meeting</td>
+            </tr>
+            <tr>
+              <td class="date">4 March 2026</td>
+              <td><a class="doc-link" href="documents/agendas/Agenda Parish Council meeting 260304.pdf" target="_blank">Agenda</a></td>
+              <td></td>
+              <td class="notes">Parish Council Meeting</td>
+            </tr>
+            <tr>
+              <td class="date">27 May 2026</td>
+              <td></td>
+              <td></td>
+              <td class="notes">Annual Parish Meeting</td>
+            </tr>
+            <tr>
+              <td class="date">27 May 2026</td>
+              <td></td>
+              <td></td>
+              <td class="notes">Annual Parish Council Meeting</td>
+            </tr>
+            <tr>
+              <td class="date">8 July 2026</td>
+              <td></td>
+              <td></td>
+              <td class="notes">Parish Council Meeting</td>
+            </tr>
+            <tr>
+              <td class="date">9 September 2026</td>
+              <td></td>
+              <td></td>
+              <td class="notes">Parish Council Meeting</td>
+            </tr>
+            <tr>
+              <td class="date">4 November 2026</td>
+              <td></td>
+              <td></td>
+              <td class="notes">Parish Council Meeting</td>
+            </tr>
+            <tr>
+              <td class="date">6 January 2027</td>
+              <td></td>
+              <td></td>
+              <td class="notes">Parish Council Meeting</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="public-note">
+          <p>Members of the public are welcome to attend meetings of the Parish Council. Details of the next meeting will also appear on the relevant published agenda.</p>
+        </div>
+      </main>
+
+      <footer class="footer">
+        © Whitbourne Parish Council 2026
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
