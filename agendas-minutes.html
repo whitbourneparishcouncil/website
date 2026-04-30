@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whitbourne Parish Council – Agendas & Minutes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ede7df;
+      color: #111;
+    }
+
+    .page {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    .site {
+      background: #fff;
+      border: 1px solid #c9c0b7;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .header {
+      background: linear-gradient(to right, #030311, #050594, #4b87d8);
+      color: white;
+      padding: 24px 32px;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    .header p {
+      margin: 16px 0 0 0;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .header-right {
+      font-family: Georgia, serif;
+      font-size: 2.25rem;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 12px;
+      padding: 12px;
+      background: #eee8e0;
+      border-top: 1px solid #ddd2c5;
+    }
+
+    .nav a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #111;
+      background: #f5f1eb;
+      border: 1px solid #ddd5cb;
+      padding: 16px 10px;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+
+    .content {
+      padding: 32px 24px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .intro h2 {
+      margin: 0;
+      font-size: 2.2rem;
+      line-height: 1.2;
+    }
+
+    .intro p {
+      margin: 18px auto 0;
+      max-width: 860px;
+      font-size: 1.2rem;
+      line-height: 1.55;
+    }
+
+    .year-block {
+      background: #f6f1ea;
+      border: 1px solid #d9cfc4;
+      border-radius: 18px;
+      padding: 28px 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+    }
+
+    .year-block h3 {
+      margin: 0 0 24px 0;
+      font-size: 1.9rem;
+    }
+
+    .meeting {
+      background: #fff;
+      border: 1px solid #d8cec2;
+      border-radius: 14px;
+      padding: 22px 20px;
+      margin-bottom: 18px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    }
+
+    .meeting:last-child {
+      margin-bottom: 0;
+    }
+
+    .meeting-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .meeting h4 {
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .meeting p {
+      margin: 10px 0 0 0;
+      font-size: 1.05rem;
+      color: #444;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .doc-link,
+    .doc-empty {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .doc-link {
+      border: 1px solid #cfc4b8;
+      background: #fff;
+      color: #1b35ff;
+      font-weight: 600;
+    }
+
+    .doc-empty {
+      border: 1px solid #d7d0c7;
+      background: #f4f1ec;
+      color: #666;
+    }
+
+    .footer {
+      border-top: 1px solid #c9c0b7;
+      background: linear-gradient(to right, #050594, #0909c3, #4b87d8);
+      color: white;
+      padding: 20px 32px;
+      font-weight: 600;
+      font-size: 1.35rem;
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .header-inner {
+        flex-direction: column;
+      }
+
+      .header h1 {
+        font-size: 2.2rem;
+      }
+
+      .header p,
+      .header-right {
+        font-size: 1.6rem;
+      }
+
+      .intro h2 {
+        font-size: 1.8rem;
+      }
+
+      .meeting-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="site">
+      <header class="header">
+        <div class="header-inner">
+          <div>
+            <h1>Whitbourne Parish Council</h1>
+            <p>Agendas &amp; Minutes</p>
+          </div>
+          <div class="header-right">Herefordshire</div>
+        </div>
+      </header>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="diary.html">Diary</a>
+        <a href="your-council.html">Your Council</a>
+        <a href="councillors.html">Councillors</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="documents.html">Documents</a>
+        <a href="local-links.html">Local Links</a>
+      </nav>
+
+      <main class="content">
+        <section class="intro">
+          <h2>Meeting Agendas and Approved Minutes</h2>
+          <p>
+            Agendas and approved minutes are listed below by year. Minutes are published
+            after approval at the following Parish Council meeting.
+          </p>
+        </section>
+
+        <section class="year-block">
+          <h3>2026</h3>
+
+          <div class="meeting">
+            <div class="meeting-row">
+              <div>
+                <h4>4 March 2026</h4>
+                <p>Parish Council Meeting</p>
+              </div>
+              <div class="links">
+                <a class="doc-link" href="documents/agendas/Agenda Parish Council meeting 260304.pdf" target="_blank">Agenda</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="meeting">
+            <div class="meeting-row">
+              <div>
+                <h4>14 January 2026</h4>
+                <p>Parish Council Meeting</p>
+              </div>
+              <div class="links">
+                <a class="doc-link" href="documents/agendas/Agenda Parish Council meeting 260114.pages.pdf" target="_blank">Agenda</a>
+                <a class="doc-link" href="documents/minutes/WPC Meeting Minutes 260114.pdf" target="_blank">Minutes</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="year-block">
+          <h3>2025</h3>
+
+          <div class="meeting">
+            <div class="meeting-row">
+              <div>
+                <h4>3 December 2025</h4>
+                <p>Parish Council Meeting</p>
+              </div>
+              <div class="links">
+                <a class="doc-link" href="documents/agendas/Agenda Parish Council meeting 251203.pdf" target="_blank">Agenda</a>
+                <a class="doc-link" href="documents/minutes/WPC Meeting Minutes 251203.pdf" target="_blank">Minutes</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        © Whitbourne Parish Council 2026
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
