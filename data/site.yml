@@ -1,0 +1,17 @@
+site:
+  title: Whitbourne Parish Council
+  county: Herefordshire
+  copyright_name: Whitbourne Parish Council
+  copyright_year: 2026
+
+home:
+  welcome_heading: Welcome to Whitbourne Parish Council’s website
+  welcome_text: This website is intended to provide a straightforward route to council meetings, documents and local information.
+  chair_welcome_title: A welcome from the Chair
+  chair_welcome_text: |
+    This website has a primary aim of being a means of communication between the Parish Council and the residents we serve in our community.
+
+    It is hoped that it will also be a source of information for visitors to our village and the wider parish area.
+  chair_name: Nigel Shaw
+  chair_role: Chair
+  chair_photo: images/councillors/nigel-shaw.jpg
