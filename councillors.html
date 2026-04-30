@@ -160,6 +160,48 @@
       color: #444;
     }
 
+    .external-grid {
+      margin-top: 42px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .external-card {
+      background: #efefef;
+      border: 1px solid #d5d0c8;
+      border-radius: 18px;
+      padding: 26px 22px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .external-card .photo {
+      width: 150px;
+      height: 150px;
+    }
+
+    .external-title {
+      margin: 16px 0 0 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .external-name {
+      margin: 8px 0 0 0;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .external-sub {
+      margin: 8px auto 0;
+      max-width: 360px;
+      font-size: 1rem;
+      line-height: 1.45;
+      color: #444;
+    }
+
     .footer {
       border-top: 1px solid #c9c0b7;
       background: linear-gradient(to right, #050594, #0909c3, #4b87d8);
@@ -172,6 +214,10 @@
     @media (max-width: 1000px) {
       .cards {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .external-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -231,9 +277,7 @@
       <main class="content">
         <section class="intro">
           <h2>Your Parish Councillors</h2>
-          <p>
-            Click on a councillor below to view a short profile.
-          </p>
+          <p>Click on a councillor below to view a short profile.</p>
         </section>
 
         <section class="cards">
@@ -308,6 +352,22 @@
             <div class="line"></div>
             <p class="hint">View profile</p>
           </a>
+        </section>
+
+        <section class="external-grid">
+          <div class="external-card">
+            <div class="photo"></div>
+            <p class="external-title">Ward Councillor</p>
+            <p class="external-name">Paul Stoddart</p>
+            <p class="external-sub">Herefordshire Councillor for Bringsty Ward</p>
+          </div>
+
+          <div class="external-card">
+            <div class="photo"></div>
+            <p class="external-title">Member of Parliament</p>
+            <p class="external-name">Ellie Chowns</p>
+            <p class="external-sub">North Herefordshire</p>
+          </div>
         </section>
       </main>
 
