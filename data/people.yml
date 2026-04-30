@@ -5,6 +5,17 @@ clerk:
   image: images/councillors/kevin-phillips.jpg
   contact_note: Emails sent to the Clerk may be shared with councillors where appropriate for Council business.
 
+ward_councillor:
+  name: Paul Stoddart
+  role: Herefordshire Councillor for Bringsty Ward
+  image: images/representatives/paul-stoddart.jpg
+
+member_of_parliament:
+  name: Ellie Chowns
+  role: Member of Parliament
+  constituency: North Herefordshire
+  image: images/representatives/ellie-chowns.jpg
+
 councillors:
   - name: Nigel Shaw
     role: Chair
