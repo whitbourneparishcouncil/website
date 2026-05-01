@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whitbourne Parish Council – Your Council</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ede7df;
+      color: #111;
+    }
+
+    .page {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    .site {
+      background: #fff;
+      border: 1px solid #c9c0b7;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .header {
+      background: linear-gradient(to right, #030311, #050594, #4b87d8);
+      color: white;
+      padding: 24px 32px;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    .header p {
+      margin: 16px 0 0 0;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .header-right {
+      font-family: Georgia, serif;
+      font-size: 2.25rem;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 12px;
+      padding: 12px;
+      background: #eee8e0;
+      border-top: 1px solid #ddd2c5;
+    }
+
+    .nav a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #111;
+      background: #f5f1eb;
+      border: 1px solid #ddd5cb;
+      padding: 16px 10px;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+
+    .content {
+      position: relative;
+      padding: 40px 32px 48px;
+    }
+
+    .scroll-top {
+      position: absolute;
+      right: 12px;
+      top: 24px;
+      width: 52px;
+      height: 72px;
+      background: #1b35ff;
+      color: white;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8rem;
+      line-height: 1;
+      font-weight: 700;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.18);
+    }
+
+    .section {
+      max-width: 1120px;
+      margin: 0 auto 56px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section h2 {
+      margin: 0 0 28px 0;
+      text-align: center;
+      font-size: 2.1rem;
+      line-height: 1.25;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 36px;
+      align-items: start;
+    }
+
+    .text-block p {
+      margin: 0 0 28px 0;
+      font-size: 1.15rem;
+      line-height: 1.5;
+    }
+
+    .text-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .meeting-image {
+      width: 100%;
+      min-height: 280px;
+      border-radius: 14px;
+      background:
+        radial-gradient(circle at 55% 22%, rgba(255,255,255,0.75) 0 8%, transparent 9%),
+        radial-gradient(circle at 42% 44%, rgba(255,255,255,0.95) 0 6%, transparent 7%),
+        radial-gradient(circle at 58% 48%, rgba(255,255,255,0.95) 0 6%, transparent 7%),
+        radial-gradient(circle at 72% 44%, rgba(255,255,255,0.95) 0 6%, transparent 7%),
+        radial-gradient(circle at 34% 42%, rgba(255,255,255,0.95) 0 6%, transparent 7%),
+        radial-gradient(circle at 66% 70%, #d8e0ee 0 22%, transparent 23%),
+        radial-gradient(circle at 44% 70%, #d8e0ee 0 22%, transparent 23%),
+        linear-gradient(180deg, #ffffff 0%, #ffffff 72%, #dfe6ef 73%, #dfe6ef 100%);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .meeting-image::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(120deg, transparent 0 18%, rgba(50,50,50,0.14) 18% 19%, transparent 19% 100%),
+        linear-gradient(65deg, transparent 0 38%, rgba(50,50,50,0.14) 38% 39%, transparent 39% 100%),
+        linear-gradient(90deg, transparent 0 52%, rgba(50,50,50,0.18) 52% 53%, transparent 53% 100%);
+      opacity: 0.9;
+    }
+
+    .section-wide p {
+      margin: 0 0 28px 0;
+      font-size: 1.15rem;
+      line-height: 1.55;
+    }
+
+    .section-wide p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-wide ul {
+      margin: 18px 0 0 32px;
+      padding: 0;
+    }
+
+    .section-wide li {
+      margin: 0 0 18px 0;
+      font-size: 1.15rem;
+      line-height: 1.5;
+    }
+
+    .section-wide li:last-child {
+      margin-bottom: 0;
+    }
+
+    .footer {
+      border-top: 1px solid #c9c0b7;
+      background: linear-gradient(to right, #050594, #0909c3, #4b87d8);
+      color: white;
+      padding: 20px 32px;
+      font-weight: 600;
+      font-size: 1.35rem;
+    }
+
+    @media (max-width: 980px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .meeting-image {
+        min-height: 220px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .header-inner {
+        flex-direction: column;
+      }
+
+      .header h1 {
+        font-size: 2.2rem;
+      }
+
+      .header p,
+      .header-right {
+        font-size: 1.6rem;
+      }
+
+      .section h2 {
+        font-size: 1.7rem;
+      }
+
+      .scroll-top {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="site">
+      <header class="header">
+        <div class="header-inner">
+          <div>
+            <h1>Whitbourne Parish Council</h1>
+            <p>What your council does</p>
+          </div>
+          <div class="header-right">Herefordshire</div>
+        </div>
+      </header>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="diary.html">Diary</a>
+        <a href="your-council.html">Your Council</a>
+        <a href="councillors.html">Councillors</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="documents.html">Documents</a>
+        <a href="local-links.html">Local Links</a>
+      </nav>
+
+      <main class="content">
+        <div class="scroll-top">↑</div>
+
+        <section class="section">
+          <h2>What is a Parish Council and what does your Council do?</h2>
+
+          <div class="two-col">
+            <div class="text-block">
+              <p>
+                A Parish Council is a statutory local authority set up under the Local Government Act 1972.
+                Councillors, who act voluntarily, are normally elected every four years. Sometimes they may
+                be elected at a by-election or by co-option to a vacancy during the four-year period.
+              </p>
+
+              <p>
+                A Clerk is employed to organise meetings, carry out the Council’s decisions and give advice
+                on any legal issues or new legislation and keep the council’s accounts.
+              </p>
+
+              <p>
+                The Clerk does not vote or make decisions for the Council.
+              </p>
+
+              <p>
+                The Parish Council’s principal role is to act in the interest of the whole community.
+                In taking action to improve the quality of community life in the parish, councillors try
+                to provide this service responsibly and openly. As such they are bound by a strict code
+                of conduct.
+              </p>
+            </div>
+
+            <div class="meeting-image" aria-hidden="true"></div>
+          </div>
+        </section>
+
+        <section class="section section-wide">
+          <h2>Powers and Duties of a Parish Council</h2>
+
+          <p>
+            Parish Councils have only a limited number of legal duties, but can have a wide range of powers.
+            These are enacted by a considerable number of statutory powers and regulations. This enables a
+            Parish Council to be able to preside over a range of responsibilities, including allotments,
+            bridleways and footpaths, burial grounds, community centres, community transport, highways, land,
+            litter, monuments and memorials, open spaces, planning, street lighting, tree planting, tourism,
+            and vehicle parking.
+          </p>
+
+          <p>
+            It does vary from council to council which powers are taken up, depending on facilities available,
+            budget levels, local priorities etc.
+          </p>
+
+          <h2>Your Council....</h2>
+
+          <ul>
+            <li>
+              Gives views and supplies local knowledge on behalf of the community, on planning applications
+              and other proposals that affect the parish. The Council has no direct powers over the decisions
+              on planning applications submitted. Planning applications in Whitbourne parish are detailed on
+              the Herefordshire Council website.
+            </li>
+            <li>Works in partnership with other bodies to achieve benefits for the Parish.</li>
+            <li>Alerts relevant authorities to problems that arise or work that needs to be undertaken.</li>
+            <li>Helps the other tiers of local government keep in touch with local communities.</li>
+            <li>Undertakes projects and activities that benefit local residents.</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        © Whitbourne Parish Council 2026
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
