@@ -6,15 +6,23 @@ clerk:
   contact_note: Emails sent to the Clerk may be shared with councillors where appropriate for Council business.
 
 ward_councillor:
-  name: Paul Stoddart
+  name: Peter Stoddard
   role: Herefordshire Councillor for Bringsty Ward
-  image: images/representatives/paul-stoddart.jpg
+  image: images/representatives/peter-stoddard.jpg
+  mobile: 07529 188727
+  email: peter.stoddard@herefordshire.gov.uk
 
 member_of_parliament:
   name: Ellie Chowns
   role: Member of Parliament
   constituency: North Herefordshire
   image: images/representatives/ellie-chowns.jpg
+  address: |
+    9, The Buttercross
+    Leominster
+    HR6 8BN
+  phone: 01568 630065
+  email: ellie.chowns.mp@parliament.uk
 
 councillors:
   - name: Nigel Shaw
