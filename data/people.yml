@@ -2,13 +2,13 @@ clerk:
   name: Kevin Phillips
   role: Clerk and Responsible Financial Officer
   email: clerk@whitbourneparishcouncil.org.uk
-  image: images/councillors/kevin-phillips.jpg
+  image: images/councillors/kevin-phillips.png
   contact_note: Emails sent to the Clerk may be shared with councillors where appropriate for Council business.
 
 ward_councillor:
   name: Peter Stoddard
   role: Herefordshire Councillor for Bringsty Ward
-  image: images/representatives/peter-stoddard.jpg
+  image: images/representatives/peter-stoddard.png
   mobile: 07529 188727
   email: peter.stoddard@herefordshire.gov.uk
 
@@ -16,7 +16,7 @@ member_of_parliament:
   name: Ellie Chowns
   role: Member of Parliament
   constituency: North Herefordshire
-  image: images/representatives/ellie-chowns.jpg
+  image: images/representatives/ellie-chowns.png
   address: |
     9, The Buttercross
     Leominster
@@ -28,7 +28,7 @@ councillors:
   - name: Nigel Shaw
     role: Chair
     slug: nigel-shaw
-    image: images/councillors/nigel-shaw.jpg
+    image: images/councillors/nigel-shaw.png
     bio: |
       Nigel lives on a smallholding on Bringsty Common. An engineer by profession, he previously served for eight years representing Bringsty / West Bromyard as a Herefordshire councillor.
 
@@ -44,48 +44,48 @@ councillors:
   - name: Sally Knowles
     role: Councillor
     slug: sally-knowles
-    image: images/councillors/sally-knowles.jpg
+    image: images/councillors/sally-knowles.png
     bio: |
       Sally and her husband Rob bought a cottage in Whitbourne in 1997, moving permanently to the village in 2015 after retirement. Sally was a primary school teacher, later specialising in English as an Additional Language. Rob worked in the building industry. She joined the Parish Council in 2019.
 
   - name: Jackie Ashcroft
     role: Councillor
     slug: jackie-ashcroft
-    image: images/councillors/jackie-ashcroft.jpg
+    image: images/councillors/jackie-ashcroft.png
     bio: |
       Jackie moved to Whitbourne in 2020 after a career in nursing and midwifery. She joined the Parish Council in 2021 and has a strong interest in local services and community wellbeing.
 
   - name: Paul Davis
     role: Councillor
     slug: paul-davis
-    image: images/councillors/paul-davis.jpg
+    image: images/councillors/paul-davis.png
     bio: |
       Paul and his wife moved to Whitbourne in 2020. He is a retired environmental scientist with a strong interest in biodiversity, conservation and the natural environment. He joined the Parish Council in 2022.
 
   - name: Tess Hunt
     role: Councillor
     slug: tess-hunt
-    image: images/councillors/tess-hunt.jpg
+    image: images/councillors/tess-hunt.png
     bio: |
       Tess moved to Whitbourne in 2014. Before retirement she worked in public service and community-facing roles. She has been involved in village organisations including the Playing Fields and joined the Parish Council in 2023.
 
   - name: Liz Kershaw
     role: Councillor
     slug: liz-kershaw
-    image: images/councillors/liz-kershaw.jpg
+    image: images/councillors/liz-kershaw.png
     bio: |
       Liz Kershaw moved with her husband Neil to Whitbourne in 2013. Following retirement from a career in IT systems and business supplies sales, she has helped support a literacy scheme within prisons and volunteered with disadvantaged teenagers. She is Chair of the Whitbourne Village Hall Committee, serves on the Playing Field Committee, Whitbourne Community Hub and NDP Steering Groups, helps with the Whitbourne Parish Magazine and volunteers in the village shop. She joined the Parish Council in 2023.
 
   - name: Mark Clark
     role: Councillor
     slug: mark-clark
-    image: images/councillors/mark-clark.jpg
+    image: images/councillors/mark-clark.png
     bio: |
       Mark has lived in Whitbourne for many years and has a strong interest in local matters affecting the parish. He joined the Parish Council to play an active part in supporting village life and facilities.
 
   - name: Ron James
     role: Councillor
     slug: ron-james
-    image: images/councillors/ron-james.jpg
+    image: images/councillors/ron-james.png
     bio: |
       Ron spent his childhood in Whitbourne and attended the village school. After serving in the armed forces he returned to the village over 20 years ago to take over his father’s farm. He has been a parish councillor for more than 10 years.
