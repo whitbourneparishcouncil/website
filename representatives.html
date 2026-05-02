@@ -135,14 +135,16 @@
     }
 
     .photo {
-      width: 180px;
-      height: 180px;
-      margin: 0 auto;
-      border-radius: 999px;
-      border: 6px solid #60a5fa;
-      background: radial-gradient(circle at 48% 38%, #d6c2b0 0, #b9967b 22%, #80756e 58%, #c7c2ba 100%);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.10);
-    }
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 999px;
+  border: 6px solid #60a5fa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+  object-fit: cover;
+  display: block;
+  background: transparent;
+}
 
     .card h3 {
       margin: 18px 0 0 0;
@@ -257,33 +259,33 @@
         </section>
 
         <section class="cards">
-          <div class="card">
-            <div class="photo"></div>
-            <h3>Ward Councillor</h3>
-            <p class="name">Peter Stoddard</p>
-            <p class="sub">Herefordshire Councillor for Bringsty Ward</p>
-            <p class="note">
-              Mobile: 07529 188727<br>
-              Email:
-              <a href="mailto:peter.stoddard@herefordshire.gov.uk">peter.stoddard@herefordshire.gov.uk</a>
-            </p>
-          </div>
+  <div class="card">
+    <img class="photo" src="images/representatives/peter-stoddard.png" alt="Peter Stoddard">
+    <h3>Ward Councillor</h3>
+    <p class="name">Peter Stoddard</p>
+    <p class="sub">Herefordshire Councillor for Bringsty Ward</p>
+    <p class="note">
+      Mobile: 07529 188727<br>
+      Email:
+      <a href="mailto:peter.stoddard@herefordshire.gov.uk">peter.stoddard@herefordshire.gov.uk</a>
+    </p>
+  </div>
 
-          <div class="card">
-            <div class="photo"></div>
-            <h3>Member of Parliament</h3>
-            <p class="name">Ellie Chowns</p>
-            <p class="sub">North Herefordshire</p>
-            <p class="note">
-              9, The Buttercross<br>
-              Leominster<br>
-              HR6 8BN<br><br>
-              Phone: 01568 630065<br>
-              Email:
-              <a href="mailto:ellie.chowns.mp@parliament.uk">ellie.chowns.mp@parliament.uk</a>
-            </p>
-          </div>
-        </section>
+  <div class="card">
+    <img class="photo" src="images/representatives/ellie-chowns.png" alt="Ellie Chowns">
+    <h3>Member of Parliament</h3>
+    <p class="name">Ellie Chowns</p>
+    <p class="sub">North Herefordshire</p>
+    <p class="note">
+      9, The Buttercross<br>
+      Leominster<br>
+      HR6 8BN<br><br>
+      Phone: 01568 630065<br>
+      Email:
+      <a href="mailto:ellie.chowns.mp@parliament.uk">ellie.chowns.mp@parliament.uk</a>
+    </p>
+  </div>
+</section>
       </main>
 
       <footer class="footer">
