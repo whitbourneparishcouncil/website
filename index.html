@@ -33,19 +33,19 @@
 .header-inner {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 24px;
 }
 
 .header-brand {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;
+  gap: 18px;
 }
 
 .header-emblem {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   flex: 0 0 auto;
 }
@@ -69,7 +69,6 @@
   font-size: 2.25rem;
   white-space: nowrap;
 }
-
     .nav {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
@@ -267,15 +266,19 @@
     flex-direction: column;
   }
 
+  @media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .header-brand {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
+    align-items: center;
+  }
 
   .header-emblem {
-    width: 72px;
-    height: 72px;
+    width: 100px;
+    height: 100px;
   }
 
   .header-text h1 {
