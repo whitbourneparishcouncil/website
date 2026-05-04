@@ -44,8 +44,8 @@
 }
 
 .header-emblem {
-  width: 96px;
-  height: 96px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
   flex: 0 0 auto;
 }
@@ -263,29 +263,30 @@
     }
 
     @media (max-width: 900px) {
-      .nav {
-        grid-template-columns: repeat(2, 1fr);
-      }
+  .header-inner {
+    flex-direction: column;
+  }
 
-      .header-inner {
-        flex-direction: column;
-      }
+  .header-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
 
-      .header h1 {
-        font-size: 2.2rem;
-      }
+  .header-emblem {
+    width: 72px;
+    height: 72px;
+  }
 
-      .header p,
-      .header-right {
-        font-size: 1.6rem;
-      }
+  .header-text h1 {
+    font-size: 2.2rem;
+  }
 
-      .intro h2,
-      .welcome-text h3 {
-        font-size: 1.8rem;
-      }
-    }
-
+  .header-text p,
+  .header-right {
+    font-size: 1.6rem;
+  }
+}
     @media (max-width: 640px) {
       .cards {
         grid-template-columns: 1fr;
