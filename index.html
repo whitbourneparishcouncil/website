@@ -25,37 +25,50 @@
     }
 
     .header {
-      background: linear-gradient(to right, #030311, #050594, #4b87d8);
-      color: white;
-      padding: 24px 32px;
-    }
+  background: linear-gradient(to right, #030311, #050594, #4b87d8);
+  color: white;
+  padding: 24px 32px;
+}
 
-    .header-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 24px;
-    }
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
 
-    .header h1 {
-      margin: 0;
-      font-family: Georgia, serif;
-      font-size: 3rem;
-      font-weight: 400;
-    }
+.header-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
 
-    .header p {
-      margin: 16px 0 0 0;
-      font-size: 2rem;
-      font-weight: 600;
-    }
+.header-emblem {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
 
-    .header-right {
-      text-align: right;
-      font-family: Georgia, serif;
-      font-size: 2.25rem;
-      white-space: nowrap;
-    }
+.header-text h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.header-text p {
+  margin: 16px 0 0 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header-right {
+  text-align: right;
+  font-family: Georgia, serif;
+  font-size: 2.25rem;
+  white-space: nowrap;
+}
 
     .nav {
       display: grid;
@@ -285,12 +298,15 @@
     <div class="site">
       <header class="header">
         <div class="header-inner">
-          <div>
-            <h1>Whitbourne Parish Council</h1>
-            <p>Welcome</p>
-          </div>
-          <div class="header-right">Herefordshire</div>
-        </div>
+  <div class="header-brand">
+    <img class="header-emblem" src="images/wpc-emblem.svg" alt="Whitbourne Parish Council emblem">
+    <div class="header-text">
+      <h1>Whitbourne Parish Council</h1>
+      <p>Welcome</p>
+    </div>
+  </div>
+  <div class="header-right">Herefordshire</div>
+</div>
       </header>
 
       <nav class="nav">
