@@ -314,9 +314,16 @@
       </main>
 
       <footer class="footer">
-        © Whitbourne Parish Council 2026
-      </footer>
+  <p id="site-footer-copy">© Whitbourne Parish Council 2026</p>
+</footer>
     </div>
   </div>
+  <script src="site-data.js"></script>
+<script>
+  const footerCopy = document.getElementById("site-footer-copy");
+  if (footerCopy && window.WPC_SITE) {
+    footerCopy.textContent = `© ${window.WPC_SITE.copyrightName} ${window.WPC_SITE.copyrightYear}`;
+  }
+</script>
 </body>
 </html>
