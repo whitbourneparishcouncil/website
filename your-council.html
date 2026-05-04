@@ -116,33 +116,14 @@
     }
 
     .meeting-image {
-      width: 100%;
-      min-height: 280px;
-      border-radius: 14px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.10);
-      background:
-        radial-gradient(circle at 55% 22%, rgba(255,255,255,0.75) 0 8%, transparent 9%),
-        radial-gradient(circle at 42% 44%, rgba(255,255,255,0.95) 0 6%, transparent 7%),
-        radial-gradient(circle at 58% 48%, rgba(255,255,255,0.95) 0 6%, transparent 7%),
-        radial-gradient(circle at 72% 44%, rgba(255,255,255,0.95) 0 6%, transparent 7%),
-        radial-gradient(circle at 34% 42%, rgba(255,255,255,0.95) 0 6%, transparent 7%),
-        radial-gradient(circle at 66% 70%, #d8e0ee 0 22%, transparent 23%),
-        radial-gradient(circle at 44% 70%, #d8e0ee 0 22%, transparent 23%),
-        linear-gradient(180deg, #ffffff 0%, #ffffff 72%, #dfe6ef 73%, #dfe6ef 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .meeting-image::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(120deg, transparent 0 18%, rgba(50,50,50,0.14) 18% 19%, transparent 19% 100%),
-        linear-gradient(65deg, transparent 0 38%, rgba(50,50,50,0.14) 38% 39%, transparent 39% 100%),
-        linear-gradient(90deg, transparent 0 52%, rgba(50,50,50,0.18) 52% 53%, transparent 53% 100%);
-      opacity: 0.9;
-    }
+  width: 100%;
+  min-height: 280px;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+  object-fit: cover;
+  display: block;
+  background: transparent;
+}
 
     .section-wide p {
       margin: 0 0 28px 0;
@@ -263,7 +244,7 @@
               </p>
             </div>
 
-            <div class="meeting-image" aria-hidden="true"></div>
+            <img class="meeting-image" src="images/parish-council-meeting-image.png" alt="Illustration of a parish council meeting">
           </div>
         </section>
 
