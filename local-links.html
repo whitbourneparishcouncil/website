@@ -124,13 +124,15 @@
       transform: translateY(-2px);
     }
 
-    .image-placeholder {
-      width: 100%;
-      height: 220px;
-      border-radius: 14px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.10);
-      background: linear-gradient(180deg, #cfe3ff 0%, #8ab4e9 45%, #7ea760 46%, #6e974f 100%);
-    }
+    .link-image {
+  width: 100%;
+  height: 220px;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+  object-fit: cover;
+  display: block;
+  background: transparent;
+}
 
     .image-placeholder.shop {
       background: linear-gradient(180deg, #d8cec2 0%, #8d6f55 35%, #7c5c46 36%, #d8ded3 100%);
@@ -229,14 +231,14 @@
 
         <section class="cards">
           <a class="card" href="https://www.whitbournevillagehall.co.uk/" target="_blank" rel="noreferrer">
-            <div class="image-placeholder"></div>
+            <img class="link-image" src="images/local-links/whitbourne-village-hall.png" alt="Whitbourne Village Hall">
             <h3>Whitbourne Village Hall</h3>
             <p>Community venue and village events information.</p>
             <p class="visit">Visit website</p>
           </a>
 
           <a class="card" href="https://whitbournevillageshop.co.uk/" target="_blank" rel="noreferrer">
-            <div class="image-placeholder shop"></div>
+            <img class="link-image" src="images/local-links/whitbourne-village-shop.png" alt="Whitbourne Village Shop">
             <h3>Whitbourne Village Shop</h3>
             <p>Local shop and community hub.</p>
             <p class="visit">Visit website</p>
