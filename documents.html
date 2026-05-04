@@ -24,18 +24,51 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
-    <header class="header">
-  <div class="header-inner">
-    <div class="header-brand">
-      <img class="header-emblem" src="images/wpc-emblem.svg" alt="Whitbourne Parish Council emblem">
-      <div class="header-text">
-        <h1>Whitbourne Parish Council</h1>
-        <p>Documents</p>
-      </div>
-    </div>
-    <div class="header-right">Herefordshire</div>
-  </div>
-</header>
+    .header {
+      background: linear-gradient(to right, #030311, #050594, #4b87d8);
+      color: white;
+      padding: 24px 32px;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .header-emblem {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    .header-text p {
+      margin: 16px 0 0 0;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .header-right {
+      text-align: right;
+      font-family: Georgia, serif;
+      font-size: 2.25rem;
+      white-space: nowrap;
+    }
 
     .nav {
       display: grid;
@@ -134,45 +167,49 @@
       }
 
       .header-inner {
-  flex-direction: column;
-  align-items: flex-start;
-}
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-.header-brand {
-  align-items: center;
-}
+      .header-brand {
+        align-items: center;
+      }
 
-.header-emblem {
-  width: 100px;
-  height: 100px;
-}
+      .header-emblem {
+        width: 100px;
+        height: 100px;
+      }
 
-.header-text h1 {
-  font-size: 2.2rem;
-}
+      .header-text h1 {
+        font-size: 2.2rem;
+      }
 
-.header-text p,
-.header-right {
-  font-size: 1.6rem;
-}
+      .header-text p,
+      .header-right {
+        font-size: 1.6rem;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="page">
     <div class="site">
       <header class="header">
-        <header class="header">
-  <div class="header-inner">
-    <div class="header-brand">
-      <img class="header-emblem" src="images/wpc-emblem.svg" alt="Whitbourne Parish Council emblem">
-      <div class="header-text">
-        <h1>Whitbourne Parish Council</h1>
-        <p>Documents</p>
-      </div>
-    </div>
-    <div class="header-right">Herefordshire</div>
-  </div>
-</header>
+        <div class="header-inner">
+          <div class="header-brand">
+            <img class="header-emblem" src="images/wpc-emblem.svg" alt="Whitbourne Parish Council emblem">
+            <div class="header-text">
+              <h1>Whitbourne Parish Council</h1>
+              <p>Documents</p>
+            </div>
+          </div>
+          <div class="header-right">Herefordshire</div>
+        </div>
+      </header>
 
       <nav class="nav">
         <a href="index.html">Home</a>
