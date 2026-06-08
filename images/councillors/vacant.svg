@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Vacant councillor seat</title>
+  <desc id="desc">A neutral placeholder image for a vacant parish councillor position.</desc>
+  <circle cx="200" cy="200" r="174" fill="#eff6ff" stroke="#60a5fa" stroke-width="10"/>
+  <circle cx="200" cy="158" r="54" fill="#60a5fa"/>
+  <path d="M116 260c10-48 46-78 84-78s74 30 84 78" fill="#60a5fa"/>
+  <text x="200" y="314" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#0f172a">VACANT</text>
+  <text x="200" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#334155">Parish Council</text>
+</svg>
