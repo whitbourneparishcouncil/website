@@ -26,20 +26,20 @@ meetings:
   - date: 2026-05-27
     type: annual_parish_council_meeting
     title: Annual Parish Council Meeting
-    agenda: ""
-    minutes: ""
+    agenda: documents/agendas/Agenda Annual Parish Council meeting 260527.pdf
+    minutes: documents/minutes/Annual Parish Council Meeting Minutes 260527.pdf
 
   - date: 2026-05-27
     type: annual_parish_meeting
     title: Annual Parish Meeting
-    agenda: ""
-    minutes: ""
+    agenda: documents/agendas/Agenda Annual Parish Meeting 260527.pdf
+    minutes: documents/minutes/Annual Parish Meeting minutes 260527.pdf
 
   - date: 2026-03-04
     type: parish_council_meeting
     title: Parish Council Meeting
     agenda: documents/agendas/Agenda Parish Council meeting 260304.pdf
-    minutes: ""
+    minutes: documents/minutes/WPC Meeting Minutes 260304.pdf
 
   - date: 2026-01-14
     type: parish_council_meeting
