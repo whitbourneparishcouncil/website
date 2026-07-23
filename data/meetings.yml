@@ -17,6 +17,12 @@ meetings:
     agenda: ""
     minutes: ""
 
+  - date: 2026-07-29
+    type: extraordinary_parish_council_meeting
+    title: Extraordinary Parish Council Meeting
+    agenda: documents/agendas/Agenda Extraordinary Parish Council meeting 260729.pdf
+    minutes: ""
+
   - date: 2026-07-08
     type: parish_council_meeting
     title: Parish Council Meeting
