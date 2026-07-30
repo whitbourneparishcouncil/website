@@ -27,7 +27,7 @@ meetings:
     type: parish_council_meeting
     title: Parish Council Meeting
     agenda: documents/agendas/Agenda Parish Council meeting 260708.pdf
-    minutes: ""
+    minutes: documents/minutes/WPC Meeting Minutes 260708.pdf
 
   - date: 2026-05-27
     type: annual_parish_council_meeting
