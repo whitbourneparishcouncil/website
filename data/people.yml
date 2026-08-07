@@ -71,12 +71,13 @@ councillors:
     bio: |
       Tess moved to Whitbourne in 2014. Before retirement she worked in public service and community-facing roles. She has been involved in village organisations including the Playing Fields and joined the Parish Council in 2023.
 
-  - name: Liz Kershaw
+  - name: Vacant
     role: Councillor
-    slug: liz-kershaw
-    image: images/councillors/liz-kershaw.png
+    slug: liz-kershaw-vacancy
+    image: images/councillors/vacant.svg
+    notice: documents/notices/councillor-vacancy-notice-liz-kershaw.pdf
     bio: |
-      Liz Kershaw moved with her husband Neil to Whitbourne in 2013. Following retirement from a career in IT systems and business supplies sales, she has helped support a literacy scheme within prisons and volunteered with disadvantaged teenagers. She is Chair of the Whitbourne Village Hall Committee, serves on the Playing Field Committee, Whitbourne Community Hub and NDP Steering Groups, helps with the Whitbourne Parish Magazine and volunteers in the village shop. She joined the Parish Council in 2023.
+      A vacancy has arisen on Whitbourne Parish Council. The official notice gives details of how electors may request an election by 27 August 2026.
 
   - name: Vacant
     role: Councillor
