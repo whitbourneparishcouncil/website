@@ -11,10 +11,10 @@ meetings:
     agenda: ""
     minutes: ""
 
-  - date: 2026-09-02
+  - date: 2026-09-09
     type: parish_council_meeting
     title: Parish Council Meeting
-    agenda: documents/agendas/Agenda Parish Council meeting 260902.pdf
+    agenda: ""
     minutes: ""
 
   - date: 2026-07-29
