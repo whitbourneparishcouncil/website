@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Councillor photo to follow</title>
+  <desc id="desc">A neutral placeholder for a councillor whose photograph is not yet available.</desc>
+  <circle cx="200" cy="200" r="174" fill="#eff6ff" stroke="#60a5fa" stroke-width="10"/>
+  <circle cx="200" cy="150" r="54" fill="#60a5fa"/>
+  <path d="M116 252c10-48 46-78 84-78s74 30 84 78" fill="#60a5fa"/>
+  <text x="200" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#0f172a">PHOTO</text>
+  <text x="200" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#334155">TO FOLLOW</text>
+</svg>
