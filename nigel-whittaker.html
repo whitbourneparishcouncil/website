@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whitbourne Parish Council – Nigel Whittaker</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ede7df;
+      color: #111;
+    }
+
+    .page {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    .site {
+      background: #fff;
+      border: 1px solid #c9c0b7;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .header {
+  background: linear-gradient(to right, #030311, #050594, #4b87d8);
+  color: white;
+  padding: 24px 32px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header-emblem {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.header-text p {
+  margin: 16px 0 0 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header-right {
+  text-align: right;
+  font-family: Georgia, serif;
+  font-size: 2.25rem;
+  white-space: nowrap;
+}
+    .nav {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 12px;
+      padding: 12px;
+      background: #eee8e0;
+      border-top: 1px solid #ddd2c5;
+    }
+
+    .nav a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #111;
+      background: #f5f1eb;
+      border: 1px solid #ddd5cb;
+      padding: 16px 10px;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+
+    .content {
+      padding: 32px 24px;
+    }
+
+    .back-link {
+      max-width: 980px;
+      margin: 0 auto 22px auto;
+    }
+
+    .back-link a {
+      color: #1b35ff;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-card {
+      max-width: 980px;
+      margin: 0 auto;
+      background: #f6f1ea;
+      border: 1px solid #d9cfc4;
+      border-radius: 18px;
+      padding: 32px 28px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    .photo-panel {
+      text-align: center;
+    }
+
+   .photo-placeholder {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  border-radius: 999px;
+  border: 6px solid #60a5fa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+  object-fit: cover;
+  display: block;
+  background: transparent;
+}
+
+    .photo-panel p {
+      margin: 18px 0 0 0;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    .photo-panel .name {
+      margin-top: 6px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .photo-line {
+      width: 210px;
+      height: 4px;
+      margin: 14px auto 0;
+      background: #60a5fa;
+    }
+
+    .profile-details h2 {
+      margin: 0;
+      font-size: 2.1rem;
+      line-height: 1.2;
+    }
+
+    .profile-details .role {
+      margin: 8px 0 0 0;
+      font-size: 1.35rem;
+      color: #444;
+      font-weight: 600;
+    }
+
+    .profile-text {
+      margin-top: 30px;
+      font-size: 1.3rem;
+      line-height: 1.65;
+      color: #222;
+    }
+
+    .profile-text p {
+      margin: 0 0 24px 0;
+    }
+
+    .profile-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .footer {
+      border-top: 1px solid #c9c0b7;
+      background: linear-gradient(to right, #050594, #0909c3, #4b87d8);
+      color: white;
+      padding: 20px 32px;
+      font-weight: 600;
+      font-size: 1.35rem;
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .header-inner {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-brand {
+  align-items: center;
+}
+
+.header-emblem {
+  width: 100px;
+  height: 100px;
+}
+
+.header-text h1 {
+  font-size: 2.2rem;
+}
+
+.header-text p,
+.header-right {
+  font-size: 1.6rem;
+}
+      .profile-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-text {
+        font-size: 1.15rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="site">
+      <header class="header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <img class="header-emblem" src="images/wpc-emblem.svg" alt="Whitbourne Parish Council emblem">
+      <div class="header-text">
+        <h1>Whitbourne Parish Council</h1>
+        <p>Councillor Profile</p>
+      </div>
+    </div>
+    <div class="header-right">Herefordshire</div>
+  </div>
+</header>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="diary.html">Diary</a>
+        <a href="your-council.html">Your Council</a>
+        <a href="councillors.html">Councillors</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="documents.html">Documents</a>
+        <a href="local-links.html">Local Links</a>
+      </nav>
+
+      <main class="content">
+        <div class="back-link">
+          <a href="councillors.html">← Back to Councillors</a>
+        </div>
+
+        <section class="profile-card">
+          <div class="profile-grid">
+            <div class="photo-panel">
+              <img class="photo-placeholder" src="images/councillors/nigel-whittaker.png" alt="Nigel Whittaker">
+              <p>Councillor</p>
+              <p class="name">Nigel Whittaker</p>
+              <div class="photo-line"></div>
+            </div>
+
+            <div class="profile-details">
+              <h2>Nigel Whittaker</h2>
+              <p class="role">Councillor, Whitbourne Parish Council</p>
+
+              <div class="profile-text">
+                <p>
+                  Nigel moved into Whitbourne in 2021, shortly before retiring from a career in
+                  the electricity supply industry in which he was engaged in the development,
+                  construction and operation of coal and gas-fired power stations in Europe, Asia
+                  and Africa. Nigel was appointed to the Board of Trustees for Whitbourne Village
+                  Hall in 2022 and as a parish councillor in 2026.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+  <p id="site-footer-copy">© Whitbourne Parish Council</p>
+</footer>
+    </div>
+  </div>
+  <script src="site-data.js"></script>
+<script>
+  const footerCopy = document.getElementById("site-footer-copy");
+  if (footerCopy && window.WPC_SITE) {
+    footerCopy.textContent = `© ${window.WPC_SITE.copyrightName} ${window.WPC_SITE.copyrightYear}`;
+  }
+</script>
+</body>
+</html>
