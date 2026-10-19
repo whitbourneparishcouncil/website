@@ -25,12 +25,24 @@ documents:
 
   - title: Privacy Policy
     adopted: 2018-05-02
-    file: documents/policies/WPC HALC (3) GDPR Privacy Policy.pdf
+    version: 2
+    amendments_approved: 2026-09-09
+    file: documents/policies/WPC Privacy Policy Version 2 Approved.pdf
 
   - title: Subject Access Policy
     adopted: 2018-05-02
-    file: documents/policies/WPC HALC (5) GDPR Subject Access Policy.pdf
+    version: 2
+    amendments_approved: 2026-09-09
+    file: documents/policies/WPC Subject Access Policy Version 2 Approved.pdf
 
   - title: General Privacy Notice
-    adopted: 2018-03
-    file: documents/policies/WPC HALC (7) GDPR - Privacy Notice - GENERAL.pdf
+    adopted: 2018-05-02
+    version: 2
+    amendments_approved: 2026-09-09
+    file: documents/policies/WPC General Privacy Notice Version 2 Approved.pdf
+
+  - title: Staff, Councillors and Role Holders Privacy Notice
+    adopted: 2018-05-02
+    version: 2
+    amendments_approved: 2026-09-09
+    file: documents/policies/WPC Staff Councillors and Role Holders Privacy Notice Version 2 Approved.pdf
