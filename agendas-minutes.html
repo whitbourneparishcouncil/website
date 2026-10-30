@@ -113,80 +113,25 @@
       line-height: 1.55;
     }
 
-    .year-block {
-      background: #f6f1ea;
-      border: 1px solid #d9cfc4;
-      border-radius: 18px;
-      padding: 28px 24px;
-      margin-bottom: 28px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.10);
-    }
-
-    .year-block h3 {
-      margin: 0 0 24px 0;
-      font-size: 1.9rem;
-    }
-
-    .meeting {
-      background: #fff;
-      border: 1px solid #d8cec2;
-      border-radius: 14px;
-      padding: 22px 20px;
-      margin-bottom: 18px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    }
-
-    .meeting:last-child {
-      margin-bottom: 0;
-    }
-
-    .meeting-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 18px;
-    }
-
-    .meeting h4 {
-      margin: 0;
-      font-size: 1.5rem;
-      line-height: 1.2;
-    }
-
-    .meeting p {
-      margin: 10px 0 0 0;
-      font-size: 1.05rem;
-      color: #444;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .doc-link,
-    .doc-empty {
-      display: inline-block;
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 1rem;
-      text-decoration: none;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
-
-    .doc-link {
-      border: 1px solid #cfc4b8;
-      background: #fff;
-      color: #1b35ff;
-      font-weight: 600;
-    }
-
-    .doc-empty {
-      border: 1px solid #d7d0c7;
-      background: #f4f1ec;
-      color: #666;
-    }
+    * { box-sizing: border-box; }
+    body { overflow-wrap: anywhere; }
+    .meeting-year { margin-bottom: 28px; }
+    .meeting-year h3 { margin: 0 0 12px; font-size: 1.4rem; }
+    .meetings { list-style: none; padding: 0; margin: 0; }
+    .meeting { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 16px 24px; padding: 16px 20px; margin-bottom: 10px; border: 1px solid #c8c0b6; border-radius: 8px; background: #f6f1ea; }
+    .meeting h4 { margin: 0; font-size: 1.2rem; line-height: 1.4; }
+    .meeting-details p { margin: 4px 0 0; font-size: 1rem; line-height: 1.45; color: #333; }
+    .meeting-documents { margin: 0; font-size: 1.05rem; line-height: 1.5; }
+    .meeting-documents > div { display: grid; grid-template-columns: 5rem minmax(0, 1fr); align-items: baseline; gap: 8px; }
+    .meeting-documents > div + div { margin-top: 6px; }
+    .meeting-documents dt { font-weight: 600; }
+    .meeting-documents dd { margin: 0; }
+    .meeting-documents a { display: inline-block; padding: 4px 2px; color: #153ca4; text-decoration: underline; text-underline-offset: 3px; }
+    .meeting-documents a:visited { color: #54268b; }
+    .unavailable { color: #444; }
+    a:focus-visible { outline: 3px solid #111; outline-offset: 3px; background: #ffdf59; color: #111; }
+    .skip-link { position: absolute; top: 0; left: 16px; transform: translateY(-150%); padding: 10px; z-index: 10; background: #fff; }
+    .skip-link:focus { transform: translateY(0); }
 
     .footer {
       border-top: 1px solid #c9c0b7;
@@ -228,14 +173,23 @@
         font-size: 1.8rem;
       }
 
-      .meeting-row {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+
+    }
+    @media (max-width: 600px) {
+      .page { padding: 8px; }
+      .header { padding: 20px 16px; }
+      .header-brand { gap: 12px; }
+      .header-emblem { width: 64px; height: 80px; }
+      .header-text h1 { font-size: 1.7rem; }
+      .content { padding: 24px 16px; }
+      .meeting { grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 14px; }
+      .meeting-documents > div { grid-template-columns: 4.6rem minmax(0, 1fr); }
+      .footer { padding: 16px; }
     }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to meeting documents</a>
   <div class="page">
     <div class="site">
       <header class="header">
@@ -251,7 +205,7 @@
   </div>
 </header>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="diary.html">Diary</a>
         <a href="your-council.html">Your Council</a>
@@ -261,137 +215,29 @@
         <a href="local-links.html">Local Links</a>
       </nav>
 
-      <main class="content">
+      <main class="content" id="main-content" tabindex="-1">
         <section class="intro">
           <h2>Meeting Agendas and Approved Minutes</h2>
           <p>
             Published agendas and approved minutes are listed below by year. For
-            forthcoming meetings, please see the Diary page.
+            forthcoming meetings, please see the <a href="diary.html">Diary page</a>.
           </p>
         </section>
 
-        <section class="year-block">
-          <h3>2026</h3>
+        <section class="meeting-year" aria-labelledby="year-2026"><h3 id="year-2026">2026</h3><ul class="meetings" role="list">
+<li class="meeting"><div class="meeting-details"><h4>4 November 2026</h4><p>Parish Council Meeting</p></div><dl class="meeting-documents"><div><dt>Agenda:</dt><dd><a href="agenda-2026-11-04.html" aria-label="Read online: agenda for Parish Council Meeting, 4 November 2026">Read online</a><span class="link-separator" aria-hidden="true"> · </span><a href="documents/agendas/Agenda Parish Council meeting 261104.pdf" aria-label="PDF: agenda for Parish Council Meeting, 4 November 2026">PDF</a></dd></div><div><dt>Minutes:</dt><dd><span class="unavailable">Minutes not yet published</span></dd></div></dl></li>
+<li class="meeting"><div class="meeting-details"><h4>9 September 2026</h4><p>Parish Council Meeting</p></div><dl class="meeting-documents"><div><dt>Agenda:</dt><dd><a href="documents/agendas/Agenda Parish Council meeting 260902.pdf" aria-label="PDF: agenda for Parish Council Meeting, 9 September 2026">PDF</a></dd></div><div><dt>Minutes:</dt><dd><span class="unavailable">Minutes not yet published</span></dd></div></dl></li>
+<li class="meeting"><div class="meeting-details"><h4>29 July 2026</h4><p>Extraordinary Parish Council Meeting</p></div><dl class="meeting-documents"><div><dt>Agenda:</dt><dd><a href="documents/agendas/Agenda Extraordinary Parish Council meeting 260729.pdf" aria-label="PDF: agenda for Extraordinary Parish Council Meeting, 29 July 2026">PDF</a></dd></div><div><dt>Minutes:</dt><dd><a href="documents/minutes/WPC Extraordinary Meeting Minutes 260729.pdf" aria-label="PDF: minutes for Extraordinary Parish Council Meeting, 29 July 2026">PDF</a></dd></div></dl></li>
+<li class="meeting"><div class="meeting-details"><h4>8 July 2026</h4><p>Parish Council Meeting</p></div><dl class="meeting-documents"><div><dt>Agenda:</dt><dd><a href="documents/agendas/Agenda Parish Council meeting 260708.pdf" aria-label="PDF: agenda for Parish Council Meeting, 8 July 2026">PDF</a></dd></div><div><dt>Minutes:</dt><dd><a href="documents/minutes/WPC Meeting Minutes 260708.pdf" aria-label="PDF: minutes for Parish Council Meeting, 8 July 2026">PDF</a></dd></div></dl></li>
+<li class="meeting"><div class="meeting-details"><h4>27 May 2026</h4><p>Annual Parish Council Meeting</p></div><dl class="meeting-documents"><div><dt>Agenda:</dt><dd><a href="documents/agendas/Agenda Annual Parish Council meeting 260527.pdf" aria-label="PDF: agenda for Annual Parish Council Meeting, 27 May 2026">PDF</a></dd></div><div><dt>Minutes:</dt><dd><a href="documents/minutes/Annual Parish Council Meeting Minutes 260527.pdf" aria-label="PDF: minutes for Annual Parish Council Meeting, 27 May 2026">PDF</a></dd></div></dl></li>
+<li class="meeting"><div class="meeting-details"><h4>27 May 2026</h4><p>Annual Parish Meeting</p></div><dl class="meeting-documents"><div><dt>Agenda:</dt><dd><a href="documents/agendas/Agenda Annual Parish Meeting 260527.pdf" aria-label="PDF: agenda for Annual Parish Meeting, 27 May 2026">PDF</a></dd></div><div><dt>Minutes:</dt><dd><a href="documents/minutes/Annual Parish Meeting minutes 260527.pdf" aria-label="PDF: minutes for Annual Parish Meeting, 27 May 2026">PDF</a></dd></div></dl></li>
+<li class="meeting"><div class="meeting-details"><h4>4 March 2026</h4><p>Parish Council Meeting</p></div><dl class="meeting-documents"><div><dt>Agenda:</dt><dd><a href="documents/agendas/Agenda Parish Council meeting 260304.pdf" aria-label="PDF: agenda for Parish Council Meeting, 4 March 2026">PDF</a></dd></div><div><dt>Minutes:</dt><dd><a href="documents/minutes/WPC Meeting Minutes 260304.pdf" aria-label="PDF: minutes for Parish Council Meeting, 4 March 2026">PDF</a></dd></div></dl></li>
+<li class="meeting"><div class="meeting-details"><h4>14 January 2026</h4><p>Parish Council Meeting</p></div><dl class="meeting-documents"><div><dt>Agenda:</dt><dd><a href="documents/agendas/Agenda Parish Council meeting 260114.pages.pdf" aria-label="PDF: agenda for Parish Council Meeting, 14 January 2026">PDF</a></dd></div><div><dt>Minutes:</dt><dd><a href="documents/minutes/WPC Meeting Minutes 260114.pdf" aria-label="PDF: minutes for Parish Council Meeting, 14 January 2026">PDF</a></dd></div></dl></li>
+</ul></section>
 
-          <div class="meeting">
-            <div class="meeting-row">
-              <div>
-                <h4>4 November 2026</h4>
-                <p>Parish Council Meeting</p>
-              </div>
-              <div class="links">
-                <a class="doc-link" href="documents/agendas/Agenda Parish Council meeting 261104.pdf" target="_blank">Agenda</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="meeting">
-            <div class="meeting-row">
-              <div>
-                <h4>9 September 2026</h4>
-                <p>Parish Council Meeting</p>
-              </div>
-              <div class="links">
-                <a class="doc-link" href="documents/agendas/Agenda Parish Council meeting 260902.pdf" target="_blank">Agenda</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="meeting">
-            <div class="meeting-row">
-              <div>
-                <h4>29 July 2026</h4>
-                <p>Extraordinary Parish Council Meeting</p>
-              </div>
-              <div class="links">
-                <a class="doc-link" href="documents/agendas/Agenda Extraordinary Parish Council meeting 260729.pdf" target="_blank">Agenda</a>
-                <a class="doc-link" href="documents/minutes/WPC Extraordinary Meeting Minutes 260729.pdf" target="_blank">Minutes</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="meeting">
-            <div class="meeting-row">
-              <div>
-                <h4>8 July 2026</h4>
-                <p>Parish Council Meeting</p>
-              </div>
-              <div class="links">
-                <a class="doc-link" href="documents/agendas/Agenda Parish Council meeting 260708.pdf" target="_blank">Agenda</a>
-                <a class="doc-link" href="documents/minutes/WPC Meeting Minutes 260708.pdf" target="_blank">Minutes</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="meeting">
-            <div class="meeting-row">
-              <div>
-                <h4>27 May 2026</h4>
-                <p>Annual Parish Council Meeting</p>
-              </div>
-              <div class="links">
-                <a class="doc-link" href="documents/agendas/Agenda Annual Parish Council meeting 260527.pdf" target="_blank">Agenda</a>
-                <a class="doc-link" href="documents/minutes/Annual Parish Council Meeting Minutes 260527.pdf" target="_blank">Minutes</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="meeting">
-            <div class="meeting-row">
-              <div>
-                <h4>27 May 2026</h4>
-                <p>Annual Parish Meeting</p>
-              </div>
-              <div class="links">
-                <a class="doc-link" href="documents/agendas/Agenda Annual Parish Meeting 260527.pdf" target="_blank">Agenda</a>
-                <a class="doc-link" href="documents/minutes/Annual Parish Meeting minutes 260527.pdf" target="_blank">Minutes</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="meeting">
-            <div class="meeting-row">
-              <div>
-                <h4>4 March 2026</h4>
-                <p>Parish Council Meeting</p>
-              </div>
-              <div class="links">
-                <a class="doc-link" href="documents/agendas/Agenda Parish Council meeting 260304.pdf" target="_blank">Agenda</a>
-                <a class="doc-link" href="documents/minutes/WPC Meeting Minutes 260304.pdf" target="_blank">Minutes</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="meeting">
-            <div class="meeting-row">
-              <div>
-                <h4>14 January 2026</h4>
-                <p>Parish Council Meeting</p>
-              </div>
-              <div class="links">
-                <a class="doc-link" href="documents/agendas/Agenda Parish Council meeting 260114.pages.pdf" target="_blank">Agenda</a>
-                <a class="doc-link" href="documents/minutes/WPC Meeting Minutes 260114.pdf" target="_blank">Minutes</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="year-block">
-          <h3>2025</h3>
-
-          <div class="meeting">
-            <div class="meeting-row">
-              <div>
-                <h4>3 December 2025</h4>
-                <p>Parish Council Meeting</p>
-              </div>
-              <div class="links">
-                <a class="doc-link" href="documents/agendas/Agenda Parish Council meeting 251203.pdf" target="_blank">Agenda</a>
-                <a class="doc-link" href="documents/minutes/WPC Meeting Minutes 251203.pdf" target="_blank">Minutes</a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <section class="meeting-year" aria-labelledby="year-2025"><h3 id="year-2025">2025</h3><ul class="meetings" role="list">
+<li class="meeting"><div class="meeting-details"><h4>3 December 2025</h4><p>Parish Council Meeting</p></div><dl class="meeting-documents"><div><dt>Agenda:</dt><dd><a href="documents/agendas/Agenda Parish Council meeting 251203.pdf" aria-label="PDF: agenda for Parish Council Meeting, 3 December 2025">PDF</a></dd></div><div><dt>Minutes:</dt><dd><a href="documents/minutes/WPC Meeting Minutes 251203.pdf" aria-label="PDF: minutes for Parish Council Meeting, 3 December 2025">PDF</a></dd></div></dl></li>
+</ul></section>
       </main>
 
       <footer class="footer">
