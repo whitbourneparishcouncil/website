@@ -149,6 +149,26 @@
       color: #444;
     }
 
+    .policy-formats {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0 .35rem;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .policy-formats a {
+      display: inline-block;
+      padding: 4px 2px;
+      color: #153ca4;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .policy-formats a:visited { color: #54268b; }
+    .policy-formats a:focus-visible { color: #111; }
+
     .doc-open {
       color: #1b35ff;
       font-weight: 600;
@@ -201,8 +221,10 @@
       }
     }
   </style>
+<link rel="stylesheet" href="accessibility.css">
 </head>
 <body>
+  <a class="wpc-skip-link" href="#main-content">Skip to main content</a>
   <div class="page">
     <div class="site">
       <header class="header">
@@ -228,7 +250,7 @@
         <a href="local-links.html">Local Links</a>
       </nav>
 
-      <main class="content">
+      <main class="content" id="main-content" tabindex="-1">
         <section class="intro">
           <h2>Current Regulations &amp; Policies</h2>
           <p>
@@ -238,65 +260,89 @@
         </section>
 
         <section class="doc-list">
-          <a class="doc-link" href="documents/policies/WPC_Standing_Orders_2026.pdf" target="_blank">
+          <article class="doc-link">
             <div class="doc-row">
               <div>
                 <h3>Standing Orders</h3>
                 <p>Adopted: 27 May 2026</p>
               </div>
-              <div class="doc-open">Open PDF</div>
+              <div class="policy-formats">
+                <a href="policy-standing-orders.html" aria-label="Read online (HTML): Standing Orders">Read online (HTML)</a>
+                <span aria-hidden="true">·</span>
+                <a href="documents/policies/WPC_Standing_Orders_2026.pdf" target="_blank" aria-label="PDF: Standing Orders">PDF</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <a class="doc-link" href="documents/policies/Herefordshire Council Code of Conduct.pdf" target="_blank">
+          <article class="doc-link">
             <div class="doc-row">
               <div>
                 <h3>Councillors’ Code of Conduct</h3>
                 <p>Adopted by WPC: 27 May 2026</p>
               </div>
-              <div class="doc-open">Open PDF</div>
+              <div class="policy-formats">
+                <a href="policy-councillors-code-of-conduct.html" aria-label="Read online (HTML): Councillors’ Code of Conduct">Read online (HTML)</a>
+                <span aria-hidden="true">·</span>
+                <a href="documents/policies/Herefordshire Council Code of Conduct.pdf" target="_blank" aria-label="PDF: Councillors’ Code of Conduct">PDF</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <a class="doc-link" href="documents/policies/WPC_Financial_Regulations_2026.pdf" target="_blank">
+          <article class="doc-link">
             <div class="doc-row">
               <div>
                 <h3>Financial Regulations</h3>
                 <p>Adopted: 27 May 2026</p>
               </div>
-              <div class="doc-open">Open PDF</div>
+              <div class="policy-formats">
+                <a href="policy-financial-regulations.html" aria-label="Read online (HTML): Financial Regulations">Read online (HTML)</a>
+                <span aria-hidden="true">·</span>
+                <a href="documents/policies/WPC_Financial_Regulations_2026.pdf" target="_blank" aria-label="PDF: Financial Regulations">PDF</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <a class="doc-link" href="documents/policies/WPC_Risk_Management_2026.pdf" target="_blank">
+          <article class="doc-link">
             <div class="doc-row">
               <div>
                 <h3>Risk Management Policy</h3>
                 <p>Adopted: 27 May 2026</p>
               </div>
-              <div class="doc-open">Open PDF</div>
+              <div class="policy-formats">
+                <a href="policy-risk-management-policy.html" aria-label="Read online (HTML): Risk Management Policy">Read online (HTML)</a>
+                <span aria-hidden="true">·</span>
+                <a href="documents/policies/WPC_Risk_Management_2026.pdf" target="_blank" aria-label="PDF: Risk Management Policy">PDF</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <a class="doc-link" href="documents/policies/WPC_Complaints_Procedure_2026.pdf" target="_blank">
+          <article class="doc-link">
             <div class="doc-row">
               <div>
                 <h3>Complaints Procedure</h3>
                 <p>Adopted: 27 May 2026</p>
               </div>
-              <div class="doc-open">Open PDF</div>
+              <div class="policy-formats">
+                <a href="policy-complaints-procedure.html" aria-label="Read online (HTML): Complaints Procedure">Read online (HTML)</a>
+                <span aria-hidden="true">·</span>
+                <a href="documents/policies/WPC_Complaints_Procedure_2026.pdf" target="_blank" aria-label="PDF: Complaints Procedure">PDF</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <a class="doc-link" href="documents/policies/WPC_Scheme_of_Delegation_2026.pdf" target="_blank">
+          <article class="doc-link">
             <div class="doc-row">
               <div>
                 <h3>Scheme of Delegation</h3>
                 <p>Adopted: 27 May 2026</p>
               </div>
-              <div class="doc-open">Open PDF</div>
+              <div class="policy-formats">
+                <a href="policy-scheme-of-delegation.html" aria-label="Read online (HTML): Scheme of Delegation">Read online (HTML)</a>
+                <span aria-hidden="true">·</span>
+                <a href="documents/policies/WPC_Scheme_of_Delegation_2026.pdf" target="_blank" aria-label="PDF: Scheme of Delegation">PDF</a>
+              </div>
             </div>
-          </a>
+          </article>
 
           <a class="doc-link" href="documents/policies/Whitbourne_Neighbourhood_Development_Plan_2016.pdf" target="_blank">
             <div class="doc-row">
@@ -308,51 +354,68 @@
             </div>
           </a>
 
-          <a class="doc-link" href="documents/policies/WPC Privacy Policy Version 2 Approved.pdf" target="_blank">
+          <article class="doc-link">
             <div class="doc-row">
               <div>
                 <h3>Privacy Policy</h3>
                 <p>Version 2 · Amendments approved: 9 September 2026</p>
               </div>
-              <div class="doc-open">Open PDF</div>
+              <div class="policy-formats">
+                <a href="policy-privacy-policy.html" aria-label="Read online (HTML): Privacy Policy">Read online (HTML)</a>
+                <span aria-hidden="true">·</span>
+                <a href="documents/policies/WPC Privacy Policy Version 2 Approved.pdf" target="_blank" aria-label="PDF: Privacy Policy">PDF</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <a class="doc-link" href="documents/policies/WPC Subject Access Policy Version 2 Approved.pdf" target="_blank">
+          <article class="doc-link">
             <div class="doc-row">
               <div>
                 <h3>Subject Access Policy</h3>
                 <p>Version 2 · Amendments approved: 9 September 2026</p>
               </div>
-              <div class="doc-open">Open PDF</div>
+              <div class="policy-formats">
+                <a href="policy-subject-access-policy.html" aria-label="Read online (HTML): Subject Access Policy">Read online (HTML)</a>
+                <span aria-hidden="true">·</span>
+                <a href="documents/policies/WPC Subject Access Policy Version 2 Approved.pdf" target="_blank" aria-label="PDF: Subject Access Policy">PDF</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <a class="doc-link" href="documents/policies/WPC General Privacy Notice Version 2 Approved.pdf" target="_blank">
+          <article class="doc-link">
             <div class="doc-row">
               <div>
                 <h3>General Privacy Notice</h3>
                 <p>Version 2 · Amendments approved: 9 September 2026</p>
               </div>
-              <div class="doc-open">Open PDF</div>
+              <div class="policy-formats">
+                <a href="policy-general-privacy-notice.html" aria-label="Read online (HTML): General Privacy Notice">Read online (HTML)</a>
+                <span aria-hidden="true">·</span>
+                <a href="documents/policies/WPC General Privacy Notice Version 2 Approved.pdf" target="_blank" aria-label="PDF: General Privacy Notice">PDF</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <a class="doc-link" href="documents/policies/WPC Staff Councillors and Role Holders Privacy Notice Version 2 Approved.pdf" target="_blank">
+          <article class="doc-link">
             <div class="doc-row">
               <div>
                 <h3>Staff, Councillors and Role Holders Privacy Notice</h3>
                 <p>Version 2 · Amendments approved: 9 September 2026</p>
               </div>
-              <div class="doc-open">Open PDF</div>
+              <div class="policy-formats">
+                <a href="policy-staff-councillors-role-holders-privacy-notice.html" aria-label="Read online (HTML): Staff, Councillors and Role Holders Privacy Notice">Read online (HTML)</a>
+                <span aria-hidden="true">·</span>
+                <a href="documents/policies/WPC Staff Councillors and Role Holders Privacy Notice Version 2 Approved.pdf" target="_blank" aria-label="PDF: Staff, Councillors and Role Holders Privacy Notice">PDF</a>
+              </div>
             </div>
-          </a>
+          </article>
         </section>
       </main>
 
      <footer class="footer">
   <p id="site-footer-copy">© Whitbourne Parish Council</p>
-</footer>
+<p><a class="wpc-statement-link" href="accessibility.html">Accessibility statement</a></p>
+      </footer>
     </div>
   </div>
   <script src="site-data.js"></script>

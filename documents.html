@@ -194,8 +194,10 @@
       }
     }
   </style>
+<link rel="stylesheet" href="accessibility.css">
 </head>
 <body>
+  <a class="wpc-skip-link" href="#main-content">Skip to main content</a>
   <div class="page">
     <div class="site">
       <header class="header">
@@ -221,7 +223,7 @@
         <a href="local-links.html">Local Links</a>
       </nav>
 
-      <main class="content">
+      <main class="content" id="main-content" tabindex="-1">
         <section class="intro">
           <h2>Council Documents</h2>
           <p>
@@ -250,7 +252,8 @@
 
       <footer class="footer">
   <p id="site-footer-copy">© Whitbourne Parish Council</p>
-</footer>
+<p><a class="wpc-statement-link" href="accessibility.html">Accessibility statement</a></p>
+      </footer>
     </div>
   </div>
   <script src="site-data.js"></script>

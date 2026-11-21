@@ -1,0 +1,65 @@
+/* Shared accessibility rules for the existing static site. */
+.wpc-skip-link {
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  z-index: 10;
+  padding: .65rem .85rem;
+  transform: translateY(calc(-100% - 1rem));
+  color: #111;
+  background: #fff;
+}
+.wpc-skip-link:focus { transform: none; }
+
+a[href]:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px #fff;
+  color: #111;
+  background: #ffdf59;
+}
+.contact-details .email a,
+main .note a {
+  text-decoration: underline;
+  text-underline-offset: .15em;
+  overflow-wrap: anywhere;
+}
+.contact-details .email a:focus-visible,
+main .note a:focus-visible { color: #111; }
+
+.footer .wpc-statement-link {
+  display: inline-block;
+  padding: .4rem .6rem;
+  color: #fff;
+  background: #050594;
+  text-decoration: underline;
+  text-underline-offset: .15em;
+}
+.footer .wpc-statement-link:focus-visible {
+  color: #111;
+  background: #ffdf59;
+}
+
+@media (max-width: 56.25rem) {
+  .header-inner, .header-brand, .header-text, .header-right { min-width: 0; }
+  .header-text, .header-right { overflow-wrap: anywhere; }
+  .header-right { white-space: normal; }
+  .contact-grid, .profile-grid, main .cards { min-width: 0; }
+  .contact-grid > *, .profile-grid > *, main .cards > * { min-width: 0; }
+}
+@media (max-width: 30rem) {
+  .header-inner { gap: .75rem; }
+  .header-brand { flex-wrap: wrap; gap: .6rem; }
+  .header-text h1 { font-size: 1.7rem; line-height: 1.2; }
+  .header-text p, .header-right { font-size: 1.25rem; }
+  .header-text p { margin-top: .5rem; }
+  main.content { overflow-wrap: anywhere; }
+  .contact-card, .profile-card, main .cards .card { padding-inline: 1rem; }
+  .photo-panel .photo-placeholder,
+  main .cards img.photo {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+  .photo-line { max-width: 100%; }
+}
